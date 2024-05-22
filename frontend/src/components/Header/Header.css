@@ -15,6 +15,7 @@
   max-width: 50%;
   bottom: 10%;
   left: 6vw;
+  animation: fadeIn 1.5s;
 }
 .header-contents h2 {
   color: #fff;
@@ -24,4 +25,13 @@
 .header-contents p {
   color: #fff;
   font-size: 1vw;
+}
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: #fff;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
 }
