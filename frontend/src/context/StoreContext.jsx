@@ -1,9 +1,11 @@
 import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
+// exportujemo storeContext kako bismo mogli da koristimo ovja context u drugim komponentama
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
+  // pravimo useState varijablu kojom cemo upravljati itemima u cartu
   const [cartItems, setCartItems] = useState({});
 
   // Funkcija koja prima ID itema i dodaje ga u cart
