@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 
 const App = () => {
+  // useState varijabla koja nam dozovljava da vidimo da li je korisnik ulogovan ili ne
   const [showLogin, setShowLogin] = useState(false);
 
   return (

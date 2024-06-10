@@ -3,7 +3,9 @@ import "./FoodItem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
+// foodItem je arrow funkcija koja dobija destruktuirani objekat kao argument u kojem se nalaze id, name, price, description, image.
 const FoodItem = ({ id, name, price, description, image }) => {
+  // definisemo useContext kako bismo imali pristup cartItems, addToCart, removeFromCart
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
 
   return (
