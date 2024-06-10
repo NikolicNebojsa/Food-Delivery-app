@@ -5,16 +5,20 @@ import { Link } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
+  // kreiramo useState varijablu u kojoj cemo proveravati koji element navbara je selektovan, kako bismo mogli da mu dodamo "Active" klasu
   const [menu, setMenu] = useState("menu");
 
+  // uzimamo totalnu vrednost cart-a kako bismo mogli da proverimo da li je cart prazan ili ne
   const { getTotalCartAmount } = useContext(StoreContext);
-
+  // renderujemo sve sto se nalazi u return statementu
   return (
     <div className="navbar">
+      {/* pravimo Link koji ce voditi na default stranu*/}
       <Link to="/">
         <img src={assets.logo} alt="Logo" className="logo" />
       </Link>
       <ul className="navbar-menu">
+        {/* pravimo Link koji ce voditi na default stranu*/}
         <Link
           to="/"
           onClick={() => setMenu("home")}
